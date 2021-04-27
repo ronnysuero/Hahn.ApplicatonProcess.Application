@@ -23,7 +23,7 @@ $ git clone https://github.com/ronnysuero/Hahn.ApplicatonProcess.Application.git
 
 ```sh
 $ cd Hahn.ApplicatonProcess.Application
-$ docker-compose build 
+$ docker build -t hahnapplicatonprocessfebruary2021web -f Hahn.ApplicatonProcess.February2021.Web/Dockerfile .
 $ docker run --rm -d  -p 5000:5000/tcp hahnapplicatonprocessfebruary2021web
 ```
 
