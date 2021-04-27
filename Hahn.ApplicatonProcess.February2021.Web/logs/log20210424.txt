@@ -1,0 +1,2135 @@
+2021-04-24 14:47:42.691 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 14:47:43.397 -04:00 [ERR] HTTP GET /Asset/GetById responded 500 in 579.3509 ms
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Hahn.ApplicatonProcess.February2021.Data.Context.HahnDbContext dataContext' of constructor 'Void .ctor(AutoMapper.IMapper, Hahn.ApplicatonProcess.February2021.Data.Context.HahnDbContext)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetAllBindings(ConstructorBinder[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<ConfigurePipeline>b__11_0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method385(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 14:50:13.881 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 14:50:18.331 -04:00 [INF] GetById Called 24/04/2021 6:50:18 PM +00:00
+2021-04-24 14:50:18.415 -04:00 [INF] HTTP GET /Asset/GetById responded 204 in 4436.8944 ms
+2021-04-24 15:03:02.371 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 15:05:20.406 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 15:33:16.686 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 15:33:16.960 -04:00 [INF] GetAll called 24/04/2021 7:33:16 PM +00:00
+2021-04-24 15:33:17.042 -04:00 [INF] HTTP GET /Department/GetAll responded 200 in 239.6825 ms
+2021-04-24 15:33:23.979 -04:00 [INF] GetAll called 24/04/2021 7:33:23 PM +00:00
+2021-04-24 15:33:23.986 -04:00 [INF] HTTP GET /Department/GetAll responded 200 in 29.0842 ms
+2021-04-24 15:34:06.432 -04:00 [INF] Insert called 24/04/2021 7:34:06 PM +00:00
+2021-04-24 15:34:19.739 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 38026.4669 ms
+2021-04-24 15:34:38.013 -04:00 [INF] Insert called 24/04/2021 7:34:38 PM +00:00
+2021-04-24 15:34:45.899 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 8242.0234 ms
+2021-04-24 15:38:50.393 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 15:38:50.862 -04:00 [INF] HTTP POST /Asset/Insert responded 400 in 357.0257 ms
+2021-04-24 15:43:23.804 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 15:43:24.466 -04:00 [INF] HTTP POST /Asset/Insert responded 400 in 522.4923 ms
+2021-04-24 15:43:59.981 -04:00 [INF] Insert called 24/04/2021 7:43:59 PM +00:00
+2021-04-24 15:44:03.614 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 12110.3447 ms
+2021-04-24 15:44:19.786 -04:00 [INF] HTTP POST /Asset/Insert responded 400 in 2887.1846 ms
+2021-04-24 15:45:23.890 -04:00 [INF] GetById called 24/04/2021 7:45:23 PM +00:00
+2021-04-24 15:45:23.961 -04:00 [INF] HTTP GET /Asset/GetById/1 responded 200 in 95.4244 ms
+2021-04-24 15:45:30.388 -04:00 [INF] GetById called 24/04/2021 7:45:30 PM +00:00
+2021-04-24 15:45:30.396 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 26.5547 ms
+2021-04-24 15:45:38.615 -04:00 [INF] GetById called 24/04/2021 7:45:38 PM +00:00
+2021-04-24 15:45:38.616 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 30.1850 ms
+2021-04-24 15:46:13.105 -04:00 [INF] GetById called 24/04/2021 7:46:13 PM +00:00
+2021-04-24 15:46:13.106 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 30.5689 ms
+2021-04-24 15:46:15.447 -04:00 [INF] GetById called 24/04/2021 7:46:15 PM +00:00
+2021-04-24 15:46:15.448 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 22.3253 ms
+2021-04-24 15:46:16.101 -04:00 [INF] GetById called 24/04/2021 7:46:16 PM +00:00
+2021-04-24 15:46:16.102 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 37.5438 ms
+2021-04-24 15:46:16.270 -04:00 [INF] GetById called 24/04/2021 7:46:16 PM +00:00
+2021-04-24 15:46:16.271 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 22.4819 ms
+2021-04-24 15:46:16.417 -04:00 [INF] GetById called 24/04/2021 7:46:16 PM +00:00
+2021-04-24 15:46:16.418 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 20.2695 ms
+2021-04-24 15:46:29.341 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 15:46:29.691 -04:00 [INF] GetById called 24/04/2021 7:46:29 PM +00:00
+2021-04-24 15:46:39.049 -04:00 [INF] HTTP GET /Asset/GetById/10 responded 204 in 9560.0987 ms
+2021-04-24 17:28:54.747 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 17:28:55.524 -04:00 [ERR] HTTP POST /Asset/Insert responded 500 in 665.6032 ms
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService -> Hahn.ApplicatonProcess.February2021.Data.Services.UnitOfWorkService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Hahn.ApplicatonProcess.February2021.Data.Services.UnitOfWorkService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Hahn.ApplicatonProcess.February2021.Data.Interfaces.IRepositoryService`1[Hahn.ApplicatonProcess.February2021.Data.Entities.Asset] assetRepository' of constructor 'Void .ctor(Hahn.ApplicatonProcess.February2021.Data.Context.HahnDbContext, Hahn.ApplicatonProcess.February2021.Data.Interfaces.IRepositoryService`1[Hahn.ApplicatonProcess.February2021.Data.Entities.Asset], Hahn.ApplicatonProcess.February2021.Data.Interfaces.IRepositoryService`1[Hahn.ApplicatonProcess.February2021.Data.Entities.Department])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetAllBindings(ConstructorBinder[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<ConfigurePipeline>b__11_0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method381(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 17:35:54.735 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 17:35:57.739 -04:00 [INF] [$AssetController] Insert called 24/04/2021 9:35:57 PM +00:00
+2021-04-24 17:36:21.201 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 26332.0810 ms
+2021-04-24 17:36:33.609 -04:00 [INF] [$AssetController] Insert called 24/04/2021 9:36:33 PM +00:00
+2021-04-24 17:36:34.688 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 3793.6803 ms
+2021-04-24 17:36:44.745 -04:00 [INF] [$AssetController] GetById called 24/04/2021 9:36:44 PM +00:00
+2021-04-24 17:36:49.853 -04:00 [INF] HTTP GET /Asset/GetById/3 responded 204 in 5132.9469 ms
+2021-04-24 17:37:18.977 -04:00 [INF] [$AssetController] GetById called 24/04/2021 9:37:18 PM +00:00
+2021-04-24 17:37:25.885 -04:00 [INF] HTTP GET /Asset/GetById/1 responded 200 in 6924.6325 ms
+2021-04-24 17:38:34.999 -04:00 [INF] HTTP PUT /Asset/Update responded 400 in 477.2396 ms
+2021-04-24 17:38:57.051 -04:00 [INF] [$AssetController] Update called 24/04/2021 9:38:57 PM +00:00
+2021-04-24 17:39:12.136 -04:00 [ERR] HTTP PUT /Asset/Update responded 500 in 15727.9095 ms
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Hahn.ApplicatonProcess.February2021.Data.Services.UnitOfWorkService.SaveAsync() in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\Services\UnitOfWorkService.cs:line 47
+   at Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService.Update(AssetModel model) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Domain\Service\AssetService.cs:line 62
+   at Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.Update(AssetModel model) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Web\Controllers\AssetController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 17:39:26.044 -04:00 [INF] [$AssetController] Update called 24/04/2021 9:39:26 PM +00:00
+2021-04-24 17:39:58.403 -04:00 [ERR] HTTP PUT /Asset/Update responded 500 in 33357.7476 ms
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Hahn.ApplicatonProcess.February2021.Data.Services.UnitOfWorkService.SaveAsync() in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\Services\UnitOfWorkService.cs:line 47
+   at Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService.Update(AssetModel model) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Domain\Service\AssetService.cs:line 62
+   at Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.Update(AssetModel model) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Web\Controllers\AssetController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 17:40:17.716 -04:00 [INF] [$AssetController] Update called 24/04/2021 9:40:17 PM +00:00
+2021-04-24 17:45:43.729 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 17:45:46.828 -04:00 [INF] [$AssetController] Insert called 24/04/2021 9:45:46 PM +00:00
+2021-04-24 17:45:51.336 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 7489.6678 ms
+2021-04-24 17:46:09.488 -04:00 [INF] [$AssetController] Update called 24/04/2021 9:46:09 PM +00:00
+2021-04-24 17:46:15.846 -04:00 [ERR] HTTP PUT /Asset/Update responded 500 in 7912.2845 ms
+System.Exception: Asset not found
+   at Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService.Update(AssetModel model) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Domain\Service\AssetService.cs:line 57
+   at Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.Update(AssetModel model) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Web\Controllers\AssetController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 17:46:37.887 -04:00 [INF] [$AssetController] Delete called 24/04/2021 9:46:37 PM +00:00
+2021-04-24 17:46:44.693 -04:00 [ERR] HTTP DELETE /Asset/Delete/2 responded 500 in 6831.5477 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at Hahn.ApplicatonProcess.February2021.Data.Repository`1.Delete(TEntity entityToDelete) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\Repository.cs:line 62
+   at Hahn.ApplicatonProcess.February2021.Data.Repository`1.Delete(Object[] id) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\Repository.cs:line 57
+   at Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService.Delete(Int32 id) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Domain\Service\AssetService.cs:line 86
+   at Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.Delete(Int32 id) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Web\Controllers\AssetController.cs:line 107
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 17:46:51.621 -04:00 [INF] [$AssetController] Delete called 24/04/2021 9:46:51 PM +00:00
+2021-04-24 17:47:21.831 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 17:47:24.832 -04:00 [INF] [$AssetController] Insert called 24/04/2021 9:47:24 PM +00:00
+2021-04-24 17:47:29.725 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 7790.9959 ms
+2021-04-24 17:47:38.948 -04:00 [INF] [$AssetController] Delete called 24/04/2021 9:47:38 PM +00:00
+2021-04-24 17:47:46.125 -04:00 [ERR] HTTP DELETE /Asset/Delete/2 responded 500 in 7206.0314 ms
+System.Exception: Asset not found
+   at Hahn.ApplicatonProcess.February2021.Domain.Service.AssetService.Delete(Int32 id) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Domain\Service\AssetService.cs:line 84
+   at Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.Delete(Int32 id) in D:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Web\Controllers\AssetController.cs:line 107
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 17:47:56.791 -04:00 [INF] [$AssetController] Delete called 24/04/2021 9:47:56 PM +00:00
+2021-04-24 17:48:03.363 -04:00 [INF] HTTP DELETE /Asset/Delete/1 responded 200 in 6590.6790 ms
+2021-04-24 17:51:25.803 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 17:51:27.565 -04:00 [INF] [$AssetController] Insert called 24/04/2021 9:51:27 PM +00:00
+2021-04-24 17:51:27.702 -04:00 [INF] HTTP POST /Asset/Insert responded 201 in 1789.7876 ms
+2021-04-24 17:51:34.508 -04:00 [INF] [$AssetController] GetById called 24/04/2021 9:51:34 PM +00:00
+2021-04-24 17:51:34.577 -04:00 [INF] HTTP GET /Asset/GetById/1 responded 200 in 99.1152 ms
+2021-04-24 17:51:40.861 -04:00 [INF] [$AssetController] GetById called 24/04/2021 9:51:40 PM +00:00
+2021-04-24 17:51:40.868 -04:00 [INF] HTTP GET /Asset/GetById/2 responded 204 in 24.9215 ms
+2021-04-24 21:36:13.554 -04:00 [INF] Starting server on port 8080...
+2021-04-24 21:36:14.019 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 21:36:14.108 -04:00 [INF] HTTP GET / responded 200 in 79.6739 ms
+2021-04-24 21:36:14.661 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 3.8050 ms
+2021-04-24 21:36:20.084 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 1.5974 ms
+2021-04-24 21:36:21.954 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.7944 ms
+2021-04-24 21:36:23.895 -04:00 [INF] HTTP GET /clientapp responded 200 in 0.6147 ms
+2021-04-24 21:36:24.288 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.3790 ms
+2021-04-24 21:36:24.676 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.3679 ms
+2021-04-24 21:36:25.762 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 73.0253 ms
+2021-04-24 21:36:27.142 -04:00 [INF] HTTP GET /clientapp/ responded 200 in 0.7234 ms
+2021-04-24 21:36:27.435 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 1.2432 ms
+2021-04-24 21:36:27.613 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.3632 ms
+2021-04-24 21:36:28.603 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.4630 ms
+2021-04-24 21:36:29.770 -04:00 [INF] HTTP GET /clientapp/ responded 200 in 0.4168 ms
+2021-04-24 21:36:30.029 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.4710 ms
+2021-04-24 21:36:30.225 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.4595 ms
+2021-04-24 21:36:31.210 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 0.4516 ms
+2021-04-24 21:39:10.525 -04:00 [INF] Starting server on port 8080...
+2021-04-24 21:39:11.146 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 21:39:12.212 -04:00 [ERR] HTTP GET /clientapp/ responded 500 in 1057.4241 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:12.618 -04:00 [ERR] HTTP GET /clientapp/ responded 500 in 1464.1629 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:13.339 -04:00 [ERR] HTTP GET / responded 500 in 278.0226 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:13.691 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 442.0948 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:14.316 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 192.9015 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:14.655 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 157.1721 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:15.708 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 211.6226 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:29.172 -04:00 [ERR] HTTP GET / responded 500 in 131.7539 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:29.751 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 159.8854 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 21:39:30.460 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 151.4454 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'serve' exited without indicating that the server was listening for requests. The error output was: npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T01_39_11_846Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:13:16.757 -04:00 [INF] Starting server on port 8080...
+2021-04-24 22:13:17.229 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 22:13:26.987 -04:00 [INF] HTTP GET / responded 200 in 9748.2138 ms
+2021-04-24 22:13:28.212 -04:00 [INF] HTTP GET /runtime~app.53c25a28e26681bc07af.bundle.js responded 200 in 966.1557 ms
+2021-04-24 22:13:28.260 -04:00 [INF] HTTP GET /vendors~556c66f2.53c25a28e26681bc07af.chunk.js responded 200 in 910.4369 ms
+2021-04-24 22:13:28.260 -04:00 [INF] HTTP GET /vendors~4cb80312.53c25a28e26681bc07af.chunk.css responded 200 in 1133.0498 ms
+2021-04-24 22:13:28.353 -04:00 [INF] HTTP GET /vendors~bdd45853.53c25a28e26681bc07af.chunk.js responded 200 in 1002.8478 ms
+2021-04-24 22:13:28.353 -04:00 [INF] HTTP GET /vendors~7e79ec10.53c25a28e26681bc07af.chunk.js responded 200 in 1106.7547 ms
+2021-04-24 22:13:28.353 -04:00 [INF] HTTP GET /vendors~72fdf3f2.53c25a28e26681bc07af.chunk.js responded 200 in 898.0344 ms
+2021-04-24 22:13:28.523 -04:00 [INF] HTTP GET /vendors~50e8d500.53c25a28e26681bc07af.chunk.js responded 200 in 263.5622 ms
+2021-04-24 22:13:28.638 -04:00 [INF] HTTP GET /vendors~9e0f4621.53c25a28e26681bc07af.chunk.js responded 200 in 351.7494 ms
+2021-04-24 22:13:28.638 -04:00 [INF] HTTP GET /vendors~ecff2e3d.53c25a28e26681bc07af.chunk.js responded 200 in 352.6641 ms
+2021-04-24 22:13:28.742 -04:00 [INF] HTTP GET /vendors~4eb3b4b8.53c25a28e26681bc07af.chunk.js responded 200 in 322.6862 ms
+2021-04-24 22:13:28.828 -04:00 [INF] HTTP GET /vendors~4cb80312.53c25a28e26681bc07af.chunk.js responded 200 in 391.4727 ms
+2021-04-24 22:13:29.214 -04:00 [INF] HTTP GET /vendors~d8a04cd2.53c25a28e26681bc07af.chunk.js responded 200 in 777.1818 ms
+2021-04-24 22:13:29.337 -04:00 [INF] HTTP GET /vendors~db300d2f.53c25a28e26681bc07af.chunk.js responded 200 in 594.2581 ms
+2021-04-24 22:13:29.337 -04:00 [INF] HTTP GET /vendors~f0dd280a.53c25a28e26681bc07af.chunk.js responded 200 in 626.7915 ms
+2021-04-24 22:13:29.472 -04:00 [INF] HTTP GET /vendors~f9ca8911.53c25a28e26681bc07af.chunk.js responded 200 in 627.5622 ms
+2021-04-24 22:13:29.472 -04:00 [INF] HTTP GET /vendors~cfbf0a2e.53c25a28e26681bc07af.chunk.js responded 200 in 413.7887 ms
+2021-04-24 22:13:29.606 -04:00 [INF] HTTP GET /vendors~00cb062a.53c25a28e26681bc07af.chunk.js responded 200 in 779.5778 ms
+2021-04-24 22:13:29.648 -04:00 [INF] HTTP GET /app~f075b844.53c25a28e26681bc07af.chunk.js responded 200 in 346.8223 ms
+2021-04-24 22:13:29.884 -04:00 [INF] HTTP GET /vendors.async~3e799143.53c25a28e26681bc07af.chunk.js responded 200 in 74.1309 ms
+2021-04-24 22:13:29.904 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 39.8957 ms
+2021-04-24 22:13:30.916 -04:00 [INF] HTTP GET /favicon.ico responded 304 in 46.1669 ms
+2021-04-24 22:13:31.879 -04:00 [INF] HTTP GET /favicon.ico responded 304 in 31.9674 ms
+2021-04-24 22:19:05.746 -04:00 [INF] Starting server on port 8080...
+2021-04-24 22:19:06.224 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 22:21:06.439 -04:00 [ERR] HTTP GET / responded 500 in 120209.1371 ms
+System.TimeoutException: The vue-cli server did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:21:47.649 -04:00 [INF] Starting server on port 8080...
+2021-04-24 22:21:48.100 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-24 22:23:13.723 -04:00 [ERR] HTTP GET / responded 500 in 85618.0546 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:23:14.085 -04:00 [ERR] HTTP GET / responded 500 in 64179.4627 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:23:14.748 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 166.1756 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:23:15.402 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 140.8656 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:23:16.367 -04:00 [ERR] HTTP GET /favicon.ico responded 500 in 140.3765 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:24:06.802 -04:00 [ERR] HTTP GET /Applicant/GetAll responded 500 in 157.1023 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:24:07.976 -04:00 [ERR] HTTP GET /Applicant/GetAll responded 500 in 156.0620 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:24:36.501 -04:00 [ERR] HTTP GET /Applicant/GetAll responded 500 in 135.6341 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:25:46.394 -04:00 [ERR] HTTP GET /Applicant/GetAll responded 500 in 158.1352 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 22:26:15.173 -04:00 [ERR] HTTP GET /Applicant/GetAll responded 500 in 175.9402 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 23:32:14.696 -04:00 [ERR] HTTP POST /Applicant/Insert responded 500 in 142.8441 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 23:32:15.197 -04:00 [ERR] HTTP POST /Applicant/Insert responded 500 in 134.7966 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 23:32:15.429 -04:00 [ERR] HTTP POST /Applicant/Insert responded 500 in 182.2722 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 23:32:17.418 -04:00 [ERR] HTTP POST /Applicant/Insert responded 500 in 140.3567 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 23:32:27.885 -04:00 [ERR] HTTP POST /Applicant/Insert responded 500 in 127.0200 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-04-24 23:32:28.096 -04:00 [ERR] HTTP POST /Applicant/Insert responded 500 in 132.3176 ms
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+))
+ ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+)
+ ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the server was listening for requests. The error output was: [31m├ù[39m [90m∩╜ówds∩╜ú[39m:  Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 8080
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! Frontend@0.1.0 start: `webpack-dev-server --extractCss "--port" "8080"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the Frontend@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ronny Zapata\AppData\Roaming\npm-cache\_logs\2021-04-25T02_23_13_451Z-debug.log
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at VueCliMiddleware.VueCliMiddleware.StartVueCliServerAsync(String sourcePath, String npmScriptName, ILogger logger, Int32 portNumber, ScriptRunnerType runner, String regex, Boolean forceKill, Boolean wsl)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at VueCliMiddleware.VueCliMiddleware.<>c__DisplayClass3_0.<Attach>b__0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at VueCliMiddleware.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)

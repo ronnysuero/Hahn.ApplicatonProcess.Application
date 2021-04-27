@@ -1,0 +1,68 @@
+2021-04-27 12:01:45.635 -04:00 [INF] Starting server on port 8080...
+2021-04-27 12:01:46.338 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-27 12:02:09.695 -04:00 [INF] HTTP GET / responded 200 in 23349.5768 ms
+2021-04-27 12:02:13.674 -04:00 [INF] HTTP GET /runtime~app.2be86471bc7b92d12d7e.bundle.js responded 200 in 1892.9477 ms
+2021-04-27 12:02:13.684 -04:00 [INF] HTTP GET /vendors~ab1ba4f8.2be86471bc7b92d12d7e.chunk.css responded 200 in 1903.2573 ms
+2021-04-27 12:02:13.751 -04:00 [INF] HTTP GET /vendors~253ae210.2be86471bc7b92d12d7e.chunk.js responded 200 in 1757.3432 ms
+2021-04-27 12:02:13.751 -04:00 [INF] HTTP GET /vendors~540a8aca.2be86471bc7b92d12d7e.chunk.js responded 200 in 1635.5437 ms
+2021-04-27 12:02:13.751 -04:00 [INF] HTTP GET /vendors~bdd45853.2be86471bc7b92d12d7e.chunk.js responded 200 in 1723.7946 ms
+2021-04-27 12:02:13.751 -04:00 [INF] HTTP GET /vendors~556c66f2.2be86471bc7b92d12d7e.chunk.js responded 200 in 1758.4778 ms
+2021-04-27 12:02:13.953 -04:00 [INF] HTTP GET /vendors~e302ef32.2be86471bc7b92d12d7e.chunk.js responded 200 in 196.2613 ms
+2021-04-27 12:02:14.111 -04:00 [INF] HTTP GET /vendors~4eb3b4b8.2be86471bc7b92d12d7e.chunk.js responded 200 in 251.5634 ms
+2021-04-27 12:02:14.115 -04:00 [INF] HTTP GET /vendors~50e8d500.2be86471bc7b92d12d7e.chunk.js responded 200 in 282.8621 ms
+2021-04-27 12:02:14.168 -04:00 [INF] HTTP GET /vendors~9e0f4621.2be86471bc7b92d12d7e.chunk.js responded 200 in 264.7644 ms
+2021-04-27 12:02:14.170 -04:00 [INF] HTTP GET /vendors~ecff2e3d.2be86471bc7b92d12d7e.chunk.js responded 200 in 219.3337 ms
+2021-04-27 12:02:14.243 -04:00 [INF] HTTP GET /vendors~d8a04cd2.2be86471bc7b92d12d7e.chunk.js responded 200 in 202.0167 ms
+2021-04-27 12:02:14.298 -04:00 [INF] HTTP GET /vendors~ab1ba4f8.2be86471bc7b92d12d7e.chunk.js responded 200 in 182.1839 ms
+2021-04-27 12:02:14.387 -04:00 [INF] HTTP GET /vendors~f0dd280a.2be86471bc7b92d12d7e.chunk.js responded 200 in 214.8232 ms
+2021-04-27 12:02:14.454 -04:00 [INF] HTTP GET /vendors~db300d2f.2be86471bc7b92d12d7e.chunk.js responded 200 in 211.9603 ms
+2021-04-27 12:02:14.526 -04:00 [INF] HTTP GET /vendors~f9ca8911.2be86471bc7b92d12d7e.chunk.js responded 200 in 280.4742 ms
+2021-04-27 12:02:14.560 -04:00 [INF] HTTP GET /vendors~00cb062a.2be86471bc7b92d12d7e.chunk.js responded 200 in 314.0392 ms
+2021-04-27 12:02:14.564 -04:00 [INF] HTTP GET /vendors~cfbf0a2e.2be86471bc7b92d12d7e.chunk.js responded 200 in 174.9440 ms
+2021-04-27 12:02:14.610 -04:00 [INF] HTTP GET /bootstrap.css.map responded 404 in 116.2991 ms
+2021-04-27 12:02:14.612 -04:00 [INF] HTTP GET /app~f075b844.2be86471bc7b92d12d7e.chunk.js responded 200 in 148.2724 ms
+2021-04-27 12:02:16.870 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 108.2294 ms
+2021-04-27 12:02:16.930 -04:00 [INF] HTTP GET /vendors.async~3e799143.2be86471bc7b92d12d7e.chunk.js responded 200 in 222.8029 ms
+2021-04-27 12:02:19.253 -04:00 [INF] HTTP GET /favicon.ico responded 304 in 592.8585 ms
+2021-04-27 12:02:19.489 -04:00 [INF] HTTP GET /assets/locales/en/translation.json responded 200 in 1572.8078 ms
+2021-04-27 12:02:19.572 -04:00 [INF] HTTP GET /favicon.ico responded 304 in 123.6955 ms
+2021-04-27 12:02:23.083 -04:00 [INF] [$DepartmentController] GetAll called 27/04/2021 4:02:20 PM +00:00
+2021-04-27 12:02:23.583 -04:00 [INF] HTTP GET /api/Department/GetAll responded 200 in 3593.1369 ms
+2021-04-27 12:02:45.595 -04:00 [INF] HTTP POST /api/Asset/Insert responded 400 in 4597.6521 ms
+2021-04-27 12:06:19.356 -04:00 [INF] Starting server on port 8080...
+2021-04-27 12:06:20.144 -04:00 [WRN] Failed to determine the https port for redirect.
+2021-04-27 12:06:43.288 -04:00 [INF] HTTP GET / responded 304 in 23135.4557 ms
+2021-04-27 12:06:51.815 -04:00 [INF] HTTP GET /vendors~253ae210.2be86471bc7b92d12d7e.chunk.js responded 304 in 639.3799 ms
+2021-04-27 12:06:51.815 -04:00 [INF] HTTP GET /runtime~app.2be86471bc7b92d12d7e.bundle.js responded 304 in 639.2168 ms
+2021-04-27 12:06:51.862 -04:00 [INF] HTTP GET /vendors~ab1ba4f8.2be86471bc7b92d12d7e.chunk.css responded 304 in 687.0736 ms
+2021-04-27 12:06:51.923 -04:00 [INF] HTTP GET /vendors~556c66f2.2be86471bc7b92d12d7e.chunk.js responded 304 in 747.6922 ms
+2021-04-27 12:06:52.017 -04:00 [INF] HTTP GET /vendors~540a8aca.2be86471bc7b92d12d7e.chunk.js responded 304 in 451.1689 ms
+2021-04-27 12:06:52.052 -04:00 [INF] HTTP GET /vendors~bdd45853.2be86471bc7b92d12d7e.chunk.js responded 304 in 877.0657 ms
+2021-04-27 12:06:52.246 -04:00 [INF] HTTP GET /vendors~ecff2e3d.2be86471bc7b92d12d7e.chunk.js responded 304 in 262.1950 ms
+2021-04-27 12:06:52.305 -04:00 [INF] HTTP GET /vendors~9e0f4621.2be86471bc7b92d12d7e.chunk.js responded 304 in 321.4413 ms
+2021-04-27 12:06:52.356 -04:00 [INF] HTTP GET /vendors~e302ef32.2be86471bc7b92d12d7e.chunk.js responded 304 in 385.6017 ms
+2021-04-27 12:06:52.376 -04:00 [INF] HTTP GET /vendors~d8a04cd2.2be86471bc7b92d12d7e.chunk.js responded 304 in 209.8993 ms
+2021-04-27 12:06:52.502 -04:00 [INF] HTTP GET /vendors~50e8d500.2be86471bc7b92d12d7e.chunk.js responded 304 in 515.9455 ms
+2021-04-27 12:06:52.524 -04:00 [INF] HTTP GET /vendors~4eb3b4b8.2be86471bc7b92d12d7e.chunk.js responded 304 in 446.3149 ms
+2021-04-27 12:06:52.616 -04:00 [INF] HTTP GET /vendors~db300d2f.2be86471bc7b92d12d7e.chunk.js responded 304 in 189.7515 ms
+2021-04-27 12:06:52.643 -04:00 [INF] HTTP GET /vendors~ab1ba4f8.2be86471bc7b92d12d7e.chunk.js responded 304 in 285.1533 ms
+2021-04-27 12:06:52.772 -04:00 [INF] HTTP GET /vendors~f0dd280a.2be86471bc7b92d12d7e.chunk.js responded 304 in 346.1869 ms
+2021-04-27 12:06:52.804 -04:00 [INF] HTTP GET /vendors~00cb062a.2be86471bc7b92d12d7e.chunk.js responded 304 in 284.3637 ms
+2021-04-27 12:06:52.863 -04:00 [INF] HTTP GET /vendors~cfbf0a2e.2be86471bc7b92d12d7e.chunk.js responded 304 in 246.0678 ms
+2021-04-27 12:06:52.862 -04:00 [INF] HTTP GET /vendors~f9ca8911.2be86471bc7b92d12d7e.chunk.js responded 304 in 246.8960 ms
+2021-04-27 12:06:52.865 -04:00 [INF] HTTP GET /app~f075b844.2be86471bc7b92d12d7e.chunk.js responded 304 in 190.2161 ms
+2021-04-27 12:06:52.915 -04:00 [INF] HTTP GET /bootstrap.css.map responded 404 in 208.8503 ms
+2021-04-27 12:06:53.361 -04:00 [INF] HTTP GET /vendors.async~3e799143.2be86471bc7b92d12d7e.chunk.js responded 304 in 112.7896 ms
+2021-04-27 12:06:53.432 -04:00 [INF] HTTP GET /favicon.ico responded 304 in 101.7816 ms
+2021-04-27 12:06:53.793 -04:00 [INF] [$DepartmentController] GetAll called 27/04/2021 4:06:53 PM +00:00
+2021-04-27 12:06:53.976 -04:00 [INF] HTTP GET /api/Department/GetAll responded 200 in 353.6430 ms
+2021-04-27 12:06:54.513 -04:00 [INF] HTTP GET /favicon.ico responded 200 in 101.5805 ms
+2021-04-27 12:06:55.423 -04:00 [INF] HTTP GET /favicon.ico responded 304 in 68.9972 ms
+2021-04-27 12:07:04.462 -04:00 [INF] [$AssetController] Insert called 27/04/2021 4:07:04 PM +00:00
+2021-04-27 12:07:04.654 -04:00 [INF] HTTP POST /api/Asset/Insert responded 201 in 1272.1548 ms
+2021-04-27 12:07:04.960 -04:00 [INF] [$DepartmentController] GetAll called 27/04/2021 4:07:04 PM +00:00
+2021-04-27 12:07:04.964 -04:00 [INF] HTTP GET /api/Department/GetAll responded 200 in 117.4411 ms
+2021-04-27 12:07:08.201 -04:00 [INF] [$DepartmentController] GetAll called 27/04/2021 4:07:08 PM +00:00
+2021-04-27 12:07:08.202 -04:00 [INF] HTTP GET /api/Department/GetAll responded 200 in 36.3865 ms
+2021-04-27 12:07:20.652 -04:00 [INF] HTTP POST /api/Asset/Insert responded 400 in 527.0106 ms
+2021-04-27 12:07:21.583 -04:00 [INF] HTTP POST /api/Asset/Insert responded 400 in 1138.3388 ms
