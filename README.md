@@ -19,10 +19,16 @@ Get git source code :
 $ git clone https://github.com/ronnysuero/Hahn.ApplicatonProcess.Application.git
 ```
 
- docker image :
+Restore DotNET and Npm packages :
 
 ```sh
 $ cd Hahn.ApplicatonProcess.Application
+$ dotnet build Hahn.ApplicatonProcess.February2021.Web/Hahn.ApplicatonProcess.February2021.Web.csproj /property:GenerateFullPaths=true /consoleloggerparameters:NoSummary
+```
+
+Create docker image :
+
+```sh
 $ docker build -t hahnapplicatonprocessfebruary2021web -f Hahn.ApplicatonProcess.February2021.Web/Dockerfile .
 $ docker run --rm -d  -p 5000:5000/tcp hahnapplicatonprocessfebruary2021web
 ```
