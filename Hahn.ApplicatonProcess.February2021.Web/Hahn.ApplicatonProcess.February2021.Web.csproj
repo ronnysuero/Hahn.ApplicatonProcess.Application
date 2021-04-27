@@ -64,10 +64,10 @@
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
   </Target>
-
-  <Target Name="RunWebpack" AfterTargets="Build" Condition="Exists('$(SpaRoot)node_modules') ">
+<!-- 
+  <Target Name="RunWebpack" AfterTargets="Build">
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
-  </Target>
+  </Target> -->
 
   <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
